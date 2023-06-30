@@ -124,7 +124,7 @@ h1{
 
 .aesthetic{
 	border-radius: 30px;
-	max-width:50vws;
+	max-width:50vw;
 	height: auto;
 	padding:0;
 
@@ -200,7 +200,7 @@ h2{
     }
 
     .aesthetic {
-      max-width: 100%;
+      max-width: 50%;
     }
 
 	#reverse{
