@@ -12,6 +12,10 @@
 	word-wrap: break-word;
 }
 
+.container{
+	width:auto;
+}
+
 
 brand{
 	font-size: 5vh;
