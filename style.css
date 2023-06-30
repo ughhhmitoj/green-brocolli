@@ -116,7 +116,7 @@ h1{
 	  width: 100%;
 	}
 	.aesthetic {
-	  width: auto;
+	  width: 100%;
 	  height: auto;
 	}
   }
@@ -124,8 +124,7 @@ h1{
 
 .aesthetic{
 	border-radius: 30px;
-	/*max-width:50vws;*/
-
+	max-width:50vws;
 	height: auto;
 	padding:0;
 
