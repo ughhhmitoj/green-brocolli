@@ -22,11 +22,12 @@ brand{
 
 
 h1{
-    font-size: 12vh;
+    font-size: 10vh;
 	line-height: 1;
 	margin-bottom: 0;
-	max-width:50%;
-
+	max-width:20%;
+@media only screen and (max-width: 600px) {
+	}
 	
 }
 .subheading{
