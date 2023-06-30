@@ -76,21 +76,28 @@ input[type="search"] {
   display: flex;
   padding: 1%;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-  gap: 5%;
-  height: auto;
-  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
   overflow: hidden;
-  box-sizing: border-box;
+  gap: 5%;
+  height: 90vh;
+}
+.first-flex h1 {
+  font-size: 12vh;
+  line-height: 1;
+  margin-bottom: 0;
+  max-width: 50%;
+  flex: 1;
 }
 
-.aesthetic {
+
+.first-flex .aesthetic {
   border-radius: 30px;
-  width: 50%;
-  max-width: 50vw;
+  max-width: 45%;
   height: auto;
-  margin-bottom: 20px;
+  padding: 0;
+  flex: 1;
 }
 
 .red {
