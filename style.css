@@ -77,13 +77,14 @@ input[type="search"] {
 
 .first-flex {
     display: flex;
-    padding: 1%;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    overflow: hidden;
-    gap: 5%;
-    height: 90vh;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 90vh; /* Set a maximum height to enable scrolling */
+    padding-right: 16px; /* Adjust for the scrollbar width */
 }
 
 .aesthetic {
