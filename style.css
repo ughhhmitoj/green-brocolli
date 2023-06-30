@@ -3,7 +3,7 @@
    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,100&display=swap');
  
 
- html , body{
+ html{
     font-family: 'Public Sans', sans-serif;
 	width:100vws;
 	display: flex;
@@ -12,6 +12,11 @@
 	word-wrap: break-word;
 	 margin:0;
 }
+body {
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
 
 
 brand{
