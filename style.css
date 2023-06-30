@@ -89,7 +89,13 @@ input[type="search"] {
   height: auto;
   padding: 0;
 }
-
+.first-flex h1 {
+  font-size: 12vh;
+  line-height: 1;
+  margin-bottom: 0;
+  max-width: 50%;
+  flex: 1;
+}
 
 .red {
   background-color: #f43f5e;
