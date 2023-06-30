@@ -76,7 +76,6 @@ input[type="search"] {
   display: flex;
   padding: 1%;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   width: 100vw;
   overflow: hidden;
@@ -91,14 +90,13 @@ input[type="search"] {
   flex: 1;
 }
 
-
 .first-flex .aesthetic {
-  border-radius: 30px;
+  display: inline-block;
   max-width: 45%;
   height: auto;
   padding: 0;
-  flex: 1;
 }
+
 
 .red {
   background-color: #f43f5e;
