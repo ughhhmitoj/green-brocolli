@@ -4,12 +4,13 @@
  
 
  html , body{
-    font-family: "Bebas Neue", sans-serif;
-	width:100vws;
-	display: flex;
-	overflow-x:unset;
-	flex-direction: column;
-	word-wrap: break-word;
+    font-family: 'Public Sans', sans-serif;
+  width:100vws;
+  display: flex;
+  overflow-x:hidden;
+  flex-direction: column;
+  word-wrap: break-word;
+   
 }
 
 
