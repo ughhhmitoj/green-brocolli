@@ -5,29 +5,27 @@
 html,
 body {
   font-family: 'Public Sans', sans-serif;
-  width: 100vw;
   display: flex;
-  overflow-x: hidden;
   flex-direction: column;
   word-wrap: break-word;
 }
 
 brand {
-  font-size: 5vh;
+  font-size: 4vh;
   text-align: left;
   padding-left: 1.5%;
 }
 
 h1 {
-  font-size: 12vh;
+  font-size: 8vh;
   line-height: 1;
   margin-bottom: 0;
-  max-width: 50%;
+  max-width: 90%;
 }
 
 .subheading {
   color: #9c9b9b;
-  font-size: 4vh;
+  font-size: 3vh;
   font-family: 'Roboto', sans-serif;
   margin-top: 0;
   word-spacing: 1.5;
@@ -38,10 +36,8 @@ h1 {
   background: #ef3f5a;
   border: 1px solid #ef3f5a;
   color: #fff;
-  padding: 0 30px;
+  padding: 0 20px;
   cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -51,42 +47,42 @@ h1 {
 }
 
 .flex-form {
-  display: -webkit-box;
   display: flex;
-  z-index: 10;
-  position: relative;
-  width: 40%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .flex-form > * {
+  flex-grow: 1;
   border: 0;
   padding: 0 0 0 10px;
   background: #fff;
-  line-height: 50px;
+  line-height: 40px;
   font-size: 1rem;
   border-radius: 0;
   outline: 0;
 }
 
 input[type="search"] {
-  flex-basis: 80%;
+  flex-basis: 70%;
 }
 
 .first-flex {
   display: flex;
-  padding: 1%;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 100vw;
-  overflow: hidden;
+  overflow: auto;
   gap: 5%;
   height: 90vh;
+  padding: 2%;
 }
 
 .aesthetic {
-  border-radius: 30px;
-  max-width: 50vw;
+  border-radius: 20px;
+  max-width: 100%;
   height: auto;
   padding: 0;
 }
@@ -104,7 +100,7 @@ input[type="search"] {
 }
 
 .scroll-snap-card {
-  height: 70vh;
+  height: 60vh;
   width: 98vw;
   scroll-snap-type: y mandatory;
   overflow: auto;
@@ -122,13 +118,13 @@ input[type="search"] {
 }
 
 .scroll-snap-card .slide p {
-  font-size: 1em;
+  font-size: 1.2em;
   color: white;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 8vh;
+  font-size: 6vh;
 }
 
 .second-flex {
@@ -139,7 +135,7 @@ h2 {
 
 .text-flex {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .aesthetic {
@@ -191,17 +187,17 @@ h2 {
 }
 
 .cx-photos > img {
-  border-radius: 100%;
-  width: 7%;
-  height: 7%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   border-color: black;
-  border-width: 1%;
+  border-width: 1px;
   border-style: outset;
-  margin: 2%;
+  margin: 2px;
 }
 
 .cx-photos {
-  margin: 5%;
+  margin: 5px;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -218,13 +214,13 @@ h2 {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  width: 350px;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
 }
 
 .title {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   text-align: center;
 }
@@ -240,10 +236,10 @@ h2 {
 }
 
 .form .group label {
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(99, 102, 102);
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: 10px;
   background-color: #fff;
   transition: all 0.3s ease;
@@ -251,10 +247,10 @@ h2 {
 
 .form .group input,
 .form .group textarea {
-  padding: 10px;
+  padding: 8px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   outline: 0;
   width: 100%;
   background-color: transparent;
@@ -262,7 +258,7 @@ h2 {
 
 .form .group input:placeholder-shown+label,
 .form .group textarea:placeholder-shown+label {
-  top: 10px;
+  top: 8px;
   background-color: transparent;
 }
 
@@ -273,17 +269,17 @@ h2 {
 
 .form .group input:focus+label,
 .form .group textarea:focus+label {
-  top: -10px;
+  top: -8px;
   left: 10px;
   background-color: #fff;
   color: #3366cc;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .form .group textarea {
   resize: none;
-  height: 100px;
+  height: 80px;
 }
 
 .form button {
@@ -292,7 +288,7 @@ h2 {
   border: none;
   border-radius: 5px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
