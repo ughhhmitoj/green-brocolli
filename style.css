@@ -7,11 +7,9 @@ body {
   font-family: 'Public Sans', sans-serif;
   width: 100vw;
   display: flex;
-  overflow-x: hidden; /* Update: Hide horizontal overflow */
+  overflow-x: hidden; /* Update: Remove horizontal scroll */
   flex-direction: column;
   word-wrap: break-word;
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
 }
 
 brand {
@@ -53,6 +51,7 @@ h1 {
 }
 
 .flex-form {
+  display: -webkit-box;
   display: flex;
   z-index: 10;
   position: relative;
@@ -76,19 +75,18 @@ input[type="search"] {
 
 .first-flex {
   display: flex;
+  padding: 1%;
   flex-wrap: wrap;
-  justify-content: center; /* Update: Center content horizontally */
-  align-items: flex-start; /* Update: Align content to the top */
+  flex-direction: column;
   width: 100vw;
   overflow: hidden;
   gap: 5%;
-  height: auto; /* Update: Set height to auto */
-  max-height: 90vh; /* Update: Set max-height to limit vertical space */
+  height: 90vh;
 }
 
 .aesthetic {
   border-radius: 30px;
-  width: 100%;
+  max-width: 50vw;
   height: auto;
   padding: 0;
 }
@@ -135,9 +133,8 @@ h2 {
 
 .second-flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Update: Center content horizontally */
-  align-items: flex-start; /* Update: Align content to the top */
+  flex-direction: column;
+  align-items: center;
 }
 
 .text-flex {
@@ -148,15 +145,13 @@ h2 {
 .aesthetic {
   max-width: 100%;
   height: auto;
-  object-fit: contain; /* Update: Adjust image within container */
-  max-height: 300px; /* Update: Set max-height for images */
 }
 
 @media only screen and (min-width: 768px) {
   .second-flex {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; /* Update: Align content to the top */
+    align-items: center;
   }
 
   .text-flex {
@@ -181,7 +176,7 @@ h2 {
 }
 
 #text-pic {
-  max-width: 110%;
+  max-width: 100%; /* Update: Adjusted image size */
 }
 
 .review-box2 {
@@ -197,12 +192,12 @@ h2 {
 
 .cx-photos > img {
   border-radius: 100%;
-  width: 50px; /* Update: Decrease image width */
-  height: 50px; /* Update: Decrease image height */
+  width: 50px; /* Update: Adjusted image size */
+  height: 50px; /* Update: Adjusted image size */
   border-color: black;
-  border-width: 1%;
+  border-width: 1px;
   border-style: outset;
-  margin: 2px; /* Update: Decrease image margin */
+  margin: 2px; /* Update: Adjusted image margin */
 }
 
 .cx-photos {
@@ -284,24 +279,23 @@ h2 {
   color: #3366cc;
   font-weight: 600;
   font-size: 14px;
+  padding: 2px 5px;
 }
 
-.form .group textarea {
-  resize: none;
-  height: 100px;
-}
-
-.form button {
-  background-color: #3366cc;
+.form .group input[type="submit"] {
+  background: #3366cc;
+  border: 0;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.form button:hover {
-  background-color: #27408b;
+.form .group input[type="submit"]:hover {
+  background: #003399;
+}
+
+@media (max-width: 768px) {
+  .flex-form {
+    width: 80%;
+  }
 }
