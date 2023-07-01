@@ -1,3 +1,6 @@
+Apologies for the oversight. To ensure that the content fits horizontally and removes the horizontal scroll, you can modify the CSS as follows:
+
+```css
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,700;0,800;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,100&display=swap');
@@ -7,7 +10,7 @@ body {
   font-family: 'Public Sans', sans-serif;
   width: 100vw;
   display: flex;
-  overflow-x: unset;
+  overflow-x: hidden; /* Hide horizontal scroll */
   flex-direction: column;
   word-wrap: break-word;
 }
@@ -51,7 +54,6 @@ h1 {
 }
 
 .flex-form {
-  display: -webkit-box;
   display: flex;
   z-index: 10;
   position: relative;
@@ -75,12 +77,12 @@ input[type="search"] {
 
 .first-flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   gap: 5%;
-  height: 70vh; /* Adjust height as needed */
+  height: auto; /* Adjust height as needed */
   overflow: hidden;
-  margin-bottom: 50px; /* Adjust margin as needed */
 }
 
 .aesthetic {
@@ -103,17 +105,19 @@ input[type="search"] {
 }
 
 .scroll-snap-card {
-  height: 70vh;
+  height: auto; /* Adjust height as needed */
   width: 100%;
   scroll-snap-type: x mandatory; /* Enable horizontal scrolling */
   overflow-x: auto; /* Enable horizontal scrolling */
   overflow-y: hidden; /* Hide vertical scroll */
   white-space: nowrap; /* Prevent wrapping to next line */
-  margin-bottom: 50px; /* Adjust margin as needed */
+  margin: 5% 0;
 }
 
 .scroll-snap-card .slide {
-  width: 100%;
+ 
+
+ width: 100%;
   height: 100%;
   scroll-snap-align: start;
   display: flex;
@@ -133,7 +137,8 @@ h2 {
 
 .second-flex {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -277,7 +282,9 @@ h2 {
   left: 10px;
   background-color: #fff;
   color: #3366cc;
-  font-weight: 600;
+  font-weight:
+
+ 600;
   font-size: 14px;
 }
 
@@ -300,3 +307,6 @@ h2 {
 .form button:hover {
   background-color: #27408b;
 }
+```
+
+Please make sure to replace the existing CSS with the updated code above.
