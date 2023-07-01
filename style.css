@@ -7,7 +7,7 @@ body {
   font-family: 'Public Sans', sans-serif;
   width: 100vw;
   display: flex;
-  overflow-x: unset;
+  overflow-x:hidden;
   flex-direction: column;
   word-wrap: break-word;
 }
