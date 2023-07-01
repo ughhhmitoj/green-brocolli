@@ -7,7 +7,7 @@ body {
   font-family: 'Public Sans', sans-serif;
   width: 100vw;
   display: flex;
-  overflow-x: hidden; /* Update: Remove horizontal scroll */
+  overflow-x: unset;
   flex-direction: column;
   word-wrap: break-word;
 }
@@ -176,7 +176,7 @@ h2 {
 }
 
 #text-pic {
-  max-width: 100%; /* Update: Adjusted image size */
+  max-width: 110%;
 }
 
 .review-box2 {
@@ -192,12 +192,12 @@ h2 {
 
 .cx-photos > img {
   border-radius: 100%;
-  width: 50px; /* Update: Adjusted image size */
-  height: 50px; /* Update: Adjusted image size */
+  width: 7%;
+  height: 7%;
   border-color: black;
-  border-width: 1px;
+  border-width: 1%;
   border-style: outset;
-  margin: 2px; /* Update: Adjusted image margin */
+  margin: 2%;
 }
 
 .cx-photos {
@@ -279,23 +279,76 @@ h2 {
   color: #3366cc;
   font-weight: 600;
   font-size: 14px;
-  padding: 2px 5px;
 }
 
-.form .group input[type="submit"] {
-  background: #3366cc;
-  border: 0;
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  background-color: #3366cc;
   color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-size: 16px;
 }
 
-.form .group input[type="submit"]:hover {
-  background: #003399;
+.form button:hover {
+  background-color: #254e90;
 }
 
-@media (max-width: 768px) {
-  .flex-form {
-    width: 80%;
-  }
+.cta-box {
+  background-color: #3366cc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.cta-box p {
+  margin-bottom: 0;
+}
+
+.cta-box button {
+  background-color: #fff;
+  color: #3366cc;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.cta-box button:hover {
+  background-color: #e6e6e6;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #3366cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
