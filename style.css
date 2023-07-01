@@ -76,7 +76,7 @@ input[type="search"] {
 .first-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 5%;
   height: auto;
@@ -103,15 +103,13 @@ input[type="search"] {
 }
 
 .scroll-snap-card {
-  height: 70vh;
-  width: 98vw;
-  scroll-snap-type: y mandatory;
-  overflow: auto;
-  border-radius: 10px;
-  margin: 5% 0;
+  height: auto;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
-  display: flex;
-  justify-content: flex-start;
+  margin: 5% 0;
 }
 
 .scroll-snap-card .slide {
@@ -135,7 +133,7 @@ h2 {
 
 .second-flex {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -150,16 +148,8 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
-  .second-flex {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .text-flex {
-    margin-right: 20px;
-    margin-bottom: 0;
-    text-align: left;
+  .first-flex {
+    flex-wrap: nowrap;
   }
 
   .aesthetic {
