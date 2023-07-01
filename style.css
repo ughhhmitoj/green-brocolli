@@ -292,63 +292,11 @@ h2 {
   border: none;
   border-radius: 5px;
   padding: 10px;
-  cursor: pointer;
   font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .form button:hover {
-  background-color: #254e90;
-}
-
-.cta-box {
-  background-color: #3366cc;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.cta-box p {
-  margin-bottom: 0;
-}
-
-.cta-box button {
-  background-color: #fff;
-  color: #3366cc;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.cta-box button:hover {
-  background-color: #e6e6e6;
-}
-
-footer {
-  background-color: #f2f2f2;
-  padding: 20px 0;
-  text-align: center;
-}
-
-footer p {
-  margin-bottom: 0;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.footer-links a {
-  margin: 0 10px;
-  color: #3366cc;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
+  background-color: #27408b;
 }
