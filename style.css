@@ -5,9 +5,9 @@
 html,
 body {
   font-family: 'Public Sans', sans-serif;
-  width: 100vw;
+  width: 100%;
   display: flex;
-  overflow-x: hidden; /* Update: Remove horizontal scroll */
+  overflow-x: hidden;
   flex-direction: column;
   word-wrap: break-word;
 }
@@ -51,7 +51,6 @@ h1 {
 }
 
 .flex-form {
-  display: -webkit-box;
   display: flex;
   z-index: 10;
   position: relative;
@@ -75,13 +74,13 @@ input[type="search"] {
 
 .first-flex {
   display: flex;
-  padding: 1%;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 100vw;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
   gap: 5%;
   height: 90vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .aesthetic {
@@ -105,7 +104,7 @@ input[type="search"] {
 
 .scroll-snap-card {
   height: 70vh;
-  width: 98vw;
+  width: 100%;
   scroll-snap-type: y mandatory;
   overflow: auto;
   border-radius: 10px;
@@ -133,7 +132,8 @@ h2 {
 
 .second-flex {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
@@ -149,9 +149,7 @@ h2 {
 
 @media only screen and (min-width: 768px) {
   .second-flex {
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 
   .text-flex {
@@ -176,7 +174,7 @@ h2 {
 }
 
 #text-pic {
-  max-width: 100%; /* Update: Adjusted image size */
+  max-width: 110%;
 }
 
 .review-box2 {
@@ -192,12 +190,12 @@ h2 {
 
 .cx-photos > img {
   border-radius: 100%;
-  width: 50px; /* Update: Adjusted image size */
-  height: 50px; /* Update: Adjusted image size */
+  width: 7%;
+  height: 7%;
   border-color: black;
-  border-width: 1px;
+  border-width: 1%;
   border-style: outset;
-  margin: 2px; /* Update: Adjusted image margin */
+  margin: 2%;
 }
 
 .cx-photos {
@@ -279,23 +277,24 @@ h2 {
   color: #3366cc;
   font-weight: 600;
   font-size: 14px;
-  padding: 2px 5px;
 }
 
-.form .group input[type="submit"] {
-  background: #3366cc;
-  border: 0;
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form button {
+  background-color: #3366cc;
   color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.form .group input[type="submit"]:hover {
-  background: #003399;
-}
-
-@media (max-width: 768px) {
-  .flex-form {
-    width: 80%;
-  }
+.form button:hover {
+  background-color: #27408b;
 }
