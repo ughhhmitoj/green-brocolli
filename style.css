@@ -5,11 +5,11 @@
 html,
 body {
   font-family: 'Public Sans', sans-serif;
-  width: 100%;
+  width: 100vw;
   display: flex;
+  overflow-x: unset;
   flex-direction: column;
   word-wrap: break-word;
-  overflow-x: hidden; /* Remove horizontal scroll */
 }
 
 brand {
@@ -75,12 +75,12 @@ input[type="search"] {
 
 .first-flex {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   gap: 5%;
-  height: auto; /* Adjust height as needed */
+  height: 70vh; /* Adjust height as needed */
   overflow: hidden;
+  margin-bottom: 50px; /* Adjust margin as needed */
 }
 
 .aesthetic {
@@ -103,13 +103,13 @@ input[type="search"] {
 }
 
 .scroll-snap-card {
-  height: auto; /* Adjust height as needed */
+  height: 70vh;
   width: 100%;
   scroll-snap-type: x mandatory; /* Enable horizontal scrolling */
   overflow-x: auto; /* Enable horizontal scrolling */
   overflow-y: hidden; /* Hide vertical scroll */
   white-space: nowrap; /* Prevent wrapping to next line */
-  margin: 5% 0;
+  margin-bottom: 50px; /* Adjust margin as needed */
 }
 
 .scroll-snap-card .slide {
@@ -133,8 +133,7 @@ h2 {
 
 .second-flex {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
