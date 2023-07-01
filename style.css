@@ -75,12 +75,12 @@ input[type="search"] {
 
 .first-flex {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 5%;
-  height: 70vh; /* Adjust height as needed */
+  height: auto;
   overflow: hidden;
-  margin-bottom: 50px; /* Adjust margin as needed */
 }
 
 .aesthetic {
@@ -104,12 +104,14 @@ input[type="search"] {
 
 .scroll-snap-card {
   height: 70vh;
-  width: 100%;
-  scroll-snap-type: x mandatory; /* Enable horizontal scrolling */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden; /* Hide vertical scroll */
-  white-space: nowrap; /* Prevent wrapping to next line */
-  margin-bottom: 50px; /* Adjust margin as needed */
+  width: 98vw;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  border-radius: 10px;
+  margin: 5% 0;
+  white-space: nowrap;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .scroll-snap-card .slide {
