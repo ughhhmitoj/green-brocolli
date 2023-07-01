@@ -5,11 +5,13 @@
 html,
 body {
   font-family: 'Public Sans', sans-serif;
-  width: 100%;
+  width: 100vw;
   display: flex;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Update: Hide horizontal overflow */
   flex-direction: column;
   word-wrap: break-word;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }
 
 brand {
@@ -75,17 +77,18 @@ input[type="search"] {
 .first-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-  height: 90vh;
-  width: 100%;
+  justify-content: center; /* Update: Center content horizontally */
+  align-items: flex-start; /* Update: Align content to the top */
+  width: 100vw;
   overflow: hidden;
+  gap: 5%;
+  height: auto; /* Update: Set height to auto */
+  max-height: 90vh; /* Update: Set max-height to limit vertical space */
 }
 
 .aesthetic {
   border-radius: 30px;
-  max-width: 50vw;
+  width: 100%;
   height: auto;
   padding: 0;
 }
@@ -104,7 +107,7 @@ input[type="search"] {
 
 .scroll-snap-card {
   height: 70vh;
-  width: 100%;
+  width: 98vw;
   scroll-snap-type: y mandatory;
   overflow: auto;
   border-radius: 10px;
@@ -133,8 +136,8 @@ h2 {
 .second-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Update: Center content horizontally */
+  align-items: flex-start; /* Update: Align content to the top */
 }
 
 .text-flex {
@@ -145,11 +148,15 @@ h2 {
 .aesthetic {
   max-width: 100%;
   height: auto;
+  object-fit: contain; /* Update: Adjust image within container */
+  max-height: 300px; /* Update: Set max-height for images */
 }
 
 @media only screen and (min-width: 768px) {
   .second-flex {
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start; /* Update: Align content to the top */
   }
 
   .text-flex {
@@ -190,12 +197,12 @@ h2 {
 
 .cx-photos > img {
   border-radius: 100%;
-  width: 7%;
-  height: 7%;
+  width: 50px; /* Update: Decrease image width */
+  height: 50px; /* Update: Decrease image height */
   border-color: black;
   border-width: 1%;
   border-style: outset;
-  margin: 2%;
+  margin: 2px; /* Update: Decrease image margin */
 }
 
 .cx-photos {
