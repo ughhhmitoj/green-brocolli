@@ -1,3 +1,10 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,700;0,800;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,100&display=swap');
@@ -5,9 +12,9 @@
 html,
 body {
   font-family: 'Public Sans', sans-serif;
-  width: 100%;
+  width: 100vw;
   display: flex;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Updated: Remove horizontal scroll */
   flex-direction: column;
   word-wrap: break-word;
 }
@@ -54,7 +61,7 @@ h1 {
   display: flex;
   z-index: 10;
   position: relative;
-  width: 40%;
+  width: 100%; /* Updated: Adjust width to fit horizontally */
   box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
@@ -74,13 +81,14 @@ input[type="search"] {
 
 .first-flex {
   display: flex;
+  padding: 1%;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  width: 100%; /* Updated: Adjust width to fit horizontally */
   gap: 5%;
   height: 90vh;
-  width: 100%;
-  overflow: hidden;
+  overflow: hidden; /* Updated: Remove horizontal scroll */
+  justify-content: center; /* Updated: Center content horizontally */
+  align-items: center; /* Updated: Center content vertically */
 }
 
 .aesthetic {
@@ -104,11 +112,12 @@ input[type="search"] {
 
 .scroll-snap-card {
   height: 70vh;
-  width: 100%;
+  width: 100%; /* Updated: Adjust width to fit horizontally */
   scroll-snap-type: y mandatory;
   overflow: auto;
   border-radius: 10px;
   margin: 5% 0;
+  display: flex; /* Added: Ensure flex behavior */
 }
 
 .scroll-snap-card .slide {
@@ -132,9 +141,10 @@ h2 {
 
 .second-flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center; /* Added: Center content vertically */
+  margin-top: 5%; /* Adjust spacing as needed */
 }
 
 .text-flex {
@@ -149,7 +159,9 @@ h2 {
 
 @media only screen and (min-width: 768px) {
   .second-flex {
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .text-flex {
@@ -190,12 +202,12 @@ h2 {
 
 .cx-photos > img {
   border-radius: 100%;
-  width: 7%;
-  height: 7%;
+  width: 50px; /* Updated: Decreased image size */
+  height: 50px; /* Updated: Decreased image size */
   border-color: black;
-  border-width: 1%;
+  border-width: 1px;
   border-style: outset;
-  margin: 2%;
+  margin: 2px; /* Updated: Adjust spacing as needed */
 }
 
 .cx-photos {
@@ -244,57 +256,65 @@ h2 {
   top: -10px;
   left: 10px;
   background-color: #fff;
-  transition: all 0.3s ease;
+  padding: 0 5px;
 }
 
-.form .group input,
-.form .group textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-  outline: 0;
-  width: 100%;
-  background-color: transparent;
-}
-
-.form .group input:placeholder-shown+label,
-.form .group textarea:placeholder-shown+label {
-  top: 10px;
-  background-color: transparent;
-}
-
-.form .group input:focus,
-.form .group textarea:focus {
-  border-color: #3366cc;
-}
-
-.form .group input:focus+label,
-.form .group textarea:focus+label {
-  top: -10px;
-  left: 10px;
-  background-color: #fff;
-  color: #3366cc;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.form .group textarea {
-  resize: none;
-  height: 100px;
-}
-
-.form button {
-  background-color: #3366cc;
-  color: #fff;
-  border: none;
+.form .group input {
+  border: 1px solid rgb(220, 220, 220);
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-.form button:hover {
-  background-color: #27408b;
+.cta-box {
+  background-color: #d73851;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.cta-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta-box a {
+  background-color: #fff;
+  color: #d73851;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.cta-box a:hover {
+  background-color: #d73851;
+  color: #fff;
+}
+
+.footer {
+  background-color: #222222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
